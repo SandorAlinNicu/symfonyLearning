@@ -79,7 +79,7 @@ class ProductController extends AbstractController
         $entityManager->remove($product);
         $entityManager->flush();
 
-        return new Response("Am sterg produsul: " . $product->getname());
+        return new Response("Am sters produsul: " . $product->getname());
 
     }
 
