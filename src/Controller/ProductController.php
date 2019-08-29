@@ -63,7 +63,7 @@ class ProductController extends AbstractController
     }
 
     /**
-     * @Route("/product/edit/{id}")
+     * @Route("/product/delete/{id}")
      */
     public function delete($id)
     {
@@ -83,6 +83,9 @@ class ProductController extends AbstractController
 
     }
 
+    /**
+     * @Route("/product/edit/{id}")
+     */
     public function update($id)
     {
         $entityManager = $this->getDoctrine()->getManager();
